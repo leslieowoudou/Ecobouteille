@@ -1,0 +1,145 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    border-bottom: 5px solid #388E3C;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #4CAF50;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.2rem;
+    color: #666666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.caracteristique {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 30px;
+}
+
+.caracteristique:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.caracteristique h3 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.caracteristique p {
+    font-size: 1.1rem;
+    color: #666666;
+    line-height: 1.6;
+}
+
+.avantages ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    color: #333333;
+    line-height: 1.8;
+}
+
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Styles pour le croquis interactif */
+.croquis-bouteille {
+    width: 300px; /* Ajustez la taille selon votre croquis */
+    height: 500px; /* Ajustez la taille selon votre croquis */
+    background-image: url('bouteille.png'); /* Chemin vers votre image de bouteille */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.croquis-bouteille:hover {
+    filter: brightness(85%);
+}
